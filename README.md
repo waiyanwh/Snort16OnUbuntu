@@ -736,6 +736,11 @@ sudo cp -r ./snorby/ /var/www/snorby/
 Install all of the Snorby pre-requisites. Ignore warnings about running bundle as root. If you get connection errors when trying to download gems, just re-run the command until it succeeds.
 ```
 cd /var/www/snorby
+sudo gem update --system
+sudo gem update
+```
+This will take a while so please wait. And then run the following command.
+```
 sudo bundle install
 ```
 Snorby uses `database.yml` to tell it how to connect to the MySQL server. We will copy the example file to the correct location and edit it with our credentials:
